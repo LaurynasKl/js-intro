@@ -18,3 +18,9 @@ var minusas = -7.56;
 console.log(amzius);
 console.log(pinigine);
 console.log(minusas);
+
+const x1 = 1;
+const x2 = 2;
+
+console.log(x1);
+console.log(x2);
