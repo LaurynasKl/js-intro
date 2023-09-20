@@ -56,3 +56,6 @@ console.log(exp4, exp5, exp6, exp7);
 
 const exp9 = 3 ** 3;
 console.log(exp9);
+
+const exp10 = 4 ** 3;
+console.log(exp10);
