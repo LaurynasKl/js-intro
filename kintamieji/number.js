@@ -25,7 +25,6 @@ const x2 = 2;
 console.log(x1);
 console.log(x2);
 
-
 const n1 = 7;
 const n2 = 5;
 
@@ -54,8 +53,16 @@ const exp7 = 2 ** 4;
 
 console.log(exp4, exp5, exp6, exp7);
 
+const suma = multi + exp7;
+console.log(suma);
+
 const exp9 = 3 ** 3;
 console.log(exp9);
 
-const exp10 = 4 ** 3;
-console.log(exp10);
+const num1 = 4 ** 2;
+console.log(num1);
+
+const num2 = -5;
+const num3 = 3;
+const summ = num2 + num3;
+console.log(summ);
