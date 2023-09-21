@@ -27,6 +27,7 @@ const pazymioPozicija = pazymiai.length -1;
 const paskutinisPazymys = pazymiai[pazymioPozicija];
 console.log(paskutinisPazymys);
 
+
 // Masyvas pazymiu.
 // suskaiciuoti pazymiu vidurki ir isvesti kaip sakini:
 // "Studento pazymiu vidurkis yra 7."
