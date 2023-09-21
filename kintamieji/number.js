@@ -66,3 +66,25 @@ const num2 = -5;
 const num3 = 3;
 const summ = num2 + num3;
 console.log(summ);
+
+console.log(-12 + 58 +(15 - 9) * (-8+8));
+
+const begalybe = Infinity;
+const minusBegalybe = -Infinity;
+
+const x = 5 / 0;
+console.log(x);
+
+const k = -5 / 0;
+console.log(k);
+
+//not-a-number = Nan
+
+const n = NaN
+console.log(n, NaN);
+
+const liekana = 7 % 5;
+console.log(liekana);
+
+const liekana2 = 65 % 13;
+console.log(liekana2);
