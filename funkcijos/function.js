@@ -11,14 +11,14 @@ function tuscia() {
 }
 
 console.log(tuscia());
-console.log(tuscia());
+
 
 function tuscia2() {
     return undefined;
 }
 
 console.log(tuscia2());
-console.log(tuscia2());
+
 
 function tuscia3() {
     return;
@@ -27,7 +27,7 @@ function tuscia3() {
 console.log(tuscia3());
 
 function duokPenkis() {
-    // duok penkis
+    // graziname penkis
     return 5;
 }
 
@@ -90,17 +90,17 @@ console.clear();
 
 function studentAverage(name, marks) {
     let totalSum = 0;
-    let i =  0;
-    //totalSum += marks[i++];
-    //totalSum += marks[2];
-    //totalSum += marks[3];
-    //totalSum += marks[4];
-
+    let i = 0;
+    totalSum += marks[i++];
+    totalSum += marks[i++];
+    totalSum += marks[i++];
+    totalSum += marks[i++];
+    totalSum += marks[i++];
     const average = totalSum / marks.length;
     return `${name}: pazymiu vidurkis yra ${average}.`;
 }
 
-console.log(studentAverage('Jonas' [10, 2, 8, 4, 6]));
-console.log(studentAverage('Maryte' [10, 9, 8, 7, 6]));
-console.log(studentAverage('Petras' [5, 6, 7, 8, 9]));
-console.log(studentAverage('Ona' [9, 9, 9, 9, 9]));
+console.log(studentAverage('Jonas', [10, 2, 8, 4, 6]));
+console.log(studentAverage('Maryte', [10, 9, 8, 7, 6,]));
+console.log(studentAverage('Petras', [5, 6, 7, 8, 9]));
+console.log(studentAverage('Ona', [9, 9, 9, 9, 9]));
