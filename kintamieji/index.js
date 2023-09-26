@@ -1,11 +1,16 @@
 /*
 KINTAMIEJI 
-
+Primityvus duomenu tipai:
 - numbers
 - strings (tekstas)
 - boolean (true/false)
 - array (kolekcija / sarasas / listas)
+- null
+- undefined
+
+Kompleksiniai duomenu tipai:
 - object (objektas - kompleksiniai informacijai aprasyti)
+- object (objektas)
 */
 
 
