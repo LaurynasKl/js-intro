@@ -114,8 +114,8 @@ Gali buti:
 console.clear();
 
 
- const parosMetas = 'diena';
-const arLyja = true;
+const parosMetas = 'naktis';
+const arLyja = false;
 const temp = 5;
 const kadaSilta = 20;
 const arAsSuStriukes = true;
@@ -126,25 +126,33 @@ if (parosMetas === 'diena' && arLyja && temp >= kadaSilta && arAsSuStriukes) {
 } else if(parosMetas === 'diena' && arLyja && temp < kadaSilta && arAsSuStriukes) {
     console.log('Lyja ir salta, gerai kad turiu striuke');    
 } else if(parosMetas === 'diena' && arLyja && temp >= kadaSilta && !arAsSuStriukes) {
-        console.log('Silta diena tai striukes nereikia');  
+    console.log('Silta diena tai striukes nereikia');  
 } else if(parosMetas === 'diena' && arLyja && temp < kadaSilta && !arAsSuStriukes) {
-    console.log(' su striuke silciau'); 
-    
-} else if (parosMetas === 'diena' && !arLyja && temp >= kadaSilta){
-    console.log('Grazi diena, eisiu i lauka pasivaikscioti, nes nustojo lyti ir yra silta, tai striukes neimsiu');
-
-}  else if (parosMetas === 'diena' && !arLyja && temp < kadaSilta) {
-    console.log('Grazi diena, eisiu i lauka nes nustojo lyti, bet yra salta, tai pasiimsiu striuke');
-
-
-} else if (parosMetas === 'naktis' && arLyja && temp >= kadaSilta) {
-    console.log('Eisiu pasivaikscioti per lietu nakti');
-} else if (parosMetas === 'naktis' && arLyja && temp < kadaSilta) {
+    console.log(' su striuke silciau');    
+} else if (parosMetas === 'diena' && !arLyja && temp >= kadaSilta && arAsSuStriukes) {
+    console.log('Sauleta diena, striukes nereikia');
+} else if (parosMetas === 'diena' && !arLyja && temp < kadaSilta && arAsSuStriukes) {
+    console.log('nelyja bet salta');
+} else if (parosMetas === 'diena' && !arLyja && temp >= kadaSilta && !arAsSuStriukes) {
+    console.log('Silta diena, striukes neimsiu ')
+} else if (parosMetas === 'diena' && !arLyja && temp < kadaSilta && !arAsSuStriukes) {
+    console.log('salta diena, reikia striukes');
+} else if (parosMetas === 'naktis' && arLyja && temp >= kadaSilta && arAsSuStriukes) {
+    console.log('Grazus lietingas vakaras');
+} else if (parosMetas === 'naktis' && arLyja && temp < kadaSilta && arAsSuStriukes) {
     console.log('Eisiu miegoti');
-} else if (parosMetas === 'naktis' && !arLyja && temp >= kadaSilta) {
-    console.log('Grazus vakaras ir eisiu pasivaikscioti');
-} else if (parosMetas === 'naktis' && !arLyja && temp < kadaSilta) {
+} else if (parosMetas === 'naktis' && arLyja && temp >= kadaSilta && !arAsSuStriukes) {
+    console.log('Lietingas vakaras');
+} else if (parosMetas === 'naktis' && arLyja && temp < kadaSilta && !arAsSuStriukes) {
+    console.log('saltas vakaras');
+} else if (parosMetas === 'naktis' && !arLyja && temp >= kadaSilta && arAsSuStriukes) {
+    console.log('Nelyja, bet pasiimsiiu striuke');
+} else if (parosMetas === 'naktis' && !arLyja && temp >= kadaSilta && !arAsSuStriukes) {
+    console.log('siltas vakaras');
+} else if (parosMetas === 'naktis' && !arLyja && temp < kadaSilta && arAsSuStriukes) {
     console.log('Saltas vakaras, niekur neisiu');
+} else if (parosMetas === 'naktis' && !arLyja && temp < kadaSilta && !arAsSuStriukes) {
+    console.log('Nelyja, bet pasiimsiiu striuke');
 }
 
 /*
@@ -166,16 +174,17 @@ if (parosMetas === 'diena') {
 } else {
     if(arLyja) {
         if(temp >= kadaSilta) {
-            console.log('Eisiu pasivaikscioti per lietu nakti');
-        } else {
             console.log('Eisiu miegoti');
+        } else {
+            console.log('Eisiu pasivaikscioti per lietu nakti');
         }
     } else {
         if(!arLyja) {
             if (temp < kadaSilta) {
-            console.log('Saltas vakaras, niekur neisiu'); 
-        } else {
-            console.log('Grazus vakaras ir eisiu pasivaikscioti'); }
+                console.log('Saltas vakaras, niekur neisiu'); 
+            } else {
+                console.log('Grazus vakaras ir eisiu pasivaikscioti');
+            }    
         }
     }
 }
