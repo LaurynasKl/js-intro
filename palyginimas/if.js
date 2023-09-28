@@ -165,7 +165,7 @@ if (parosMetas === 'diena' && arLyja && temp >= kadaSilta && arAsSuStriukes) {
  const arLyja = true;
  const temp = 5;
  const kadaSilta = 20;
- const arAsSuStriukes = true;
+ const arAsSuStriukes = false;
 
 if (parosMetas === 'diena') {
     if(arLyja) {
@@ -176,14 +176,13 @@ if (parosMetas === 'diena') {
                 console.log('Silta, tai striukes nereikia'); }
     } else {
         if(arLyja) { 
-            if (temp >= kadaSilta) { 
+            if (temp < kadaSilta) { 
                 if(arAsSuStriukes) { 
                     console.log('Lyja ir salta, gerai kad turiu striuke'); }
                 } else { 
-                    console.log('grazi diena');
-            }
-        }
-    }
+                    console.log('grazi diena'); }
+                } 
+            } 
 } /*else {
     if(arLyja) {
         if(temp >= kadaSilta) {
