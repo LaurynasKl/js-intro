@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "uzd:tarpai": "nodemon ./uzd/tarpai.js",
     "method:string": "nodemon ./method/string.js",
     "method:number": "nodemon ./method/number.js",
     "for": "nodemon ./ciklas/for.js",
