@@ -151,15 +151,102 @@ console.log(kiek('vasara', 'v'));
 
 console.clear();
 
-function even(skaicia) {
+function even(skaiciai) {
     let sum = 0;
-    let sum1 = 0;
-    for(let i = 0 ; i < skaicia.length; i++) {
-        if(skaicia[i] % 2 === 0) {
-            sum += skaicia[i];
+    for(let i = 0 ; i < skaiciai.length; i++) {
+        if(skaiciai[i] % 2 === 0) {
+            sum += skaiciai[i];
         }
     }
     return sum;
 }
 
 console.log(even([1, 3, 4, 6 , 8]));
+
+function evenOrOdd(number) {
+    let x = 0;
+    for(let i = 0; i < number.length; i++) {
+      if(number[i] % 2 === 0) {
+        x++;
+      }
+    }
+    return x;
+}
+
+console.log(evenOrOdd([1, 3, 4, 6 , 8]));
+
+console.clear();
+
+//                01234567
+const kopustas = 'kopustas';
+console.log(kopustas.slice());
+console.log(kopustas.slice(0));
+console.log(kopustas.slice(0, 0));
+console.log(kopustas.slice(0, 1));
+console.log(kopustas.slice(0, 2));
+console.log(kopustas.slice(0, 3));
+console.log(kopustas.slice(1, 3));
+console.log(kopustas.slice(2, 4));
+console.log(kopustas.slice(-3));
+console.log(kopustas.slice(-3, -1));
+console.log(kopustas.slice(-6, -3));
+console.log(kopustas.slice(3, 6));
+
+console.clear();
+
+const pvz = 'Labas rytas suraitytas vistos koja parasytas';
+console.log(pvz.split('x'));
+console.log(pvz.split('a'));
+console.log(pvz.split(' '));
+
+const pvz2 = 'vasara';
+const pvz2PoSplito = pvz2.split('a');
+console.log(pvz2PoSplito);
+
+console.log('sasasasas'.split('a'));
+console.log('sasasasas'.split('s'));
+
+console.log(' '.split('x'));
+console.log('x'.split('x'));
+console.log('asd'.split('asd'));
+console.log(''.split(''));
+console.log('labas'.split(''));
+
+console.clear();
+
+console.log('Labas'.startsWith('x'));
+console.log('Labas'.startsWith('l'));
+console.log('Labas'.startsWith('L'));
+console.log('Labas'.startsWith('La'));
+console.log('Labas'.startsWith('Labs'));
+console.log('Labas'.startsWith('Labas'));
+console.log('Labas'.startsWith(''));
+console.log('------------------');
+console.log('Vasara'.endsWith('x'));
+console.log('Vasara'.endsWith('a'));
+console.log('Vasara'.endsWith('sa'));
+console.log('Vasara'.endsWith('ra'));
+console.log('Vasara'.endsWith('sara'));
+console.log('Vasara'.endsWith('Vasara'));
+console.log('Vasara'.endsWith(''));
+
+console.clear();
+
+const pasaka = 'Ryto pasaka: Apie Jonukka ir Gretute';
+const pasakatoUpperCase = pasaka.toUpperCase();
+const pasakatoLowerCase = pasaka.toLowerCase();
+console.log(pasaka);
+console.log(pasakatoUpperCase);
+console.log(pasaka);
+console.log(pasakatoLowerCase);
+
+console.clear();
+
+const tarpai = '       labas    ';
+const beTarpu = tarpai.trim();
+console.log(`"${tarpai}"`);
+console.log(beTarpu);
+
+const tarpai2 = '       labas      rytas    ';
+console.log(`${tarpai2}`);
+console.log(`${tarpai2.trim()}`);
