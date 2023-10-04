@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "method:array": "nodemon ./method/array.js",
     "uzd:vardas": "nodemon ./uzd/vardas.js",
     "uzd:tarpai": "nodemon ./uzd/tarpai.js",
     "method:string": "nodemon ./method/string.js",
