@@ -74,6 +74,7 @@ const firstLetter3 = (str) => {
     }
     return str[0];
 }
+
 const firstLetter4 = str => {
     if(typeof str !== 'string') {
         return 'Error: first param has to be string';
@@ -85,7 +86,33 @@ const firstLetter4 = str => {
     return str[0];
 }
 
-console.log(firstLetter('Labas'));
-console.log(firstLetter2('Labas'));
-console.log(firstLetter3('Labas'));
-console.log(firstLetter4('Labas'));
+console.log('1',firstLetter('Labas'));
+console.log('2', firstLetter2('Labas'));
+console.log('3', firstLetter3('Labas'));
+console.log('4', firstLetter4('Labas'));
+
+const firstLetter5 = str => typeof str !== 'string' 
+        ? 'Error: first param has to be string'
+        : str.length === 0 
+            ? 'Error: first param has to be non-empty'
+            : str[0];
+
+console.log('5', firstLetter5('Labas'));
+
+
+const errors = {
+    notString: 'Error: first param has to be string',
+    empty : 'Error: first param has to be non-empty',
+};
+
+const firstLetter6 = str => typeof str !== 'string' 
+        ? errors.notString
+        : str.length
+            ? str[0]
+            : errors.empty;
+
+console.log('6', firstLetter6('Labas'));
+
+
+
+
