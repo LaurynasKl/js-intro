@@ -12,7 +12,7 @@ if(amzius < limitas) {
     zinute1 = 'Uzeik';
 }
 console.log('>>>', zinute1);
-
+//##############################
 
 let zinute2 = 'Uzeik';
 
@@ -20,14 +20,19 @@ if(amzius < limitas) {
     zinute2 = 'Sorry';
 }
 console.log('>>>', zinute2);
+//#################################
 
+//ternary: (sudaro 3 dalys)
 const zinute3 = amzius < limitas ? 'Sorry': 'Uzeik';
 console.log('>>>', zinute3);
+//#################################
 
 
+//           if
 const q1 = 0 > 1 
-                ? 2 
-                : 3;
+/* return */    ? 2 
+/* else   */    : 3;
+
 console.log(q1);
 
 const q2 = 0 < 1 
