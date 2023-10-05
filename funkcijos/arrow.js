@@ -34,3 +34,16 @@ const kvadratu = a => a ** 2;
 console.log(`${n1} ** 2 = ${kvadratu(n1)}`);
 console.log(`${n2} ** 2 = ${kvadratu(n2)}`);
 
+const pirmaRaide = zodis => zodis[0];
+
+console.log(pirmaRaide(''));
+
+const firstLetter = str => {
+    if(typeof str !== 'string') {
+        return "Klaida: turi buti string"
+    }
+    if (str.length === 0){
+        return "errors: per trumpas"
+    }
+    return str[0];
+}   

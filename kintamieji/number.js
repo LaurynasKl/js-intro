@@ -1,5 +1,6 @@
 /*
 NUMBERS
+- visi skaiciai atsako true iskyrus 0;
 
 - teigiami / neigiami
 - sveikieji / desimtainiai

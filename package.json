@@ -9,6 +9,7 @@
     "method:string": "nodemon ./method/string.js",
     "method:number": "nodemon ./method/number.js",
     "for": "nodemon ./ciklas/for.js",
+    "ternary": "nodemon ./palyginimas/ternary.js",
     "if": "nodemon ./palyginimas/if.js",
     "arrow": "nodemon ./funkcijos/arrow.js",
     "function": "nodemon ./funkcijos/function.js",
