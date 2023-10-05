@@ -10,6 +10,7 @@
     "method:number": "nodemon ./method/number.js",
     "for": "nodemon ./ciklas/for.js",
     "if": "nodemon ./palyginimas/if.js",
+    "arrow": "nodemon ./funkcijos/arrow.js",
     "function": "nodemon ./funkcijos/function.js",
     "object": "nodemon ./kintamieji/object.js",
     "array": "nodemon ./kintamieji/array.js",

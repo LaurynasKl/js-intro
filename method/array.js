@@ -82,3 +82,51 @@ console.log(abcJoin, typeof abcJoin);
 console.log(abcJoin2);
 console.log(abcJoin3);
 console.log(abcJoinHip);
+
+console.clear();
+
+const flowers = ['kardelis'];
+console.log(flowers);
+
+flowers.push('roze');
+console.log(flowers);
+
+flowers.push('tulpe');
+console.log(flowers);
+
+flowers.push('narcizas');
+console.log(flowers);
+
+flowers.pop();
+console.log(flowers);
+
+flowers.shift();
+console.log(flowers);
+
+flowers.unshift('ruta');
+console.log(flowers);
+
+console.clear();
+
+console.log(flowers);
+console.log(flowers.reverse());
+console.log(flowers);
+console.log(flowers.reverse());
+console.log(flowers);
+
+console.clear();
+
+const  number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const number46 = number.slice(3, 6);
+const number45 = number.slice(5, 6);
+console.log(number46);
+console.log(number45);
+
+console.clear();
+
+console.log(number);
+
+//number.splice(3);
+//number.splice(3, 3);
+number.splice(3, 3, 11, 12, 13);
+console.log(number);
