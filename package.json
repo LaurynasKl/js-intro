@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "class-extends": "nodemon ./funkcijos/class-extends.js",
+    "class": "nodemon ./funkcijos/class.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
     "uzd:pazymiai": "nodemon ./uzd/pazymiai.js",
     "uzd:vardas": "nodemon ./uzd/vardas.js",
