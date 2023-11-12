@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "rick-roll": "nodemon ./friday/rick-roll.js",
     "skaiciai": "nodemon ./friday/skaiciai.js",
     "tekstas": "nodemon ./friday/tekstas.js",
     "class-extends": "nodemon ./funkcijos/class-extends.js",
