@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "skaiciai": "nodemon ./friday/skaiciai.js",
+    "tekstas": "nodemon ./friday/tekstas.js",
     "class-extends": "nodemon ./funkcijos/class-extends.js",
     "class": "nodemon ./funkcijos/class.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
